@@ -1,0 +1,17 @@
+{
+  "name": "zhihu-no-login",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "description": "Remove the ANNOYING login modal of zhihu.com.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.zhihu.com/*"
+      ],
+      "js": [
+        "disableZhihuLogin.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
